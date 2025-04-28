@@ -2,7 +2,7 @@ package mylab.user.di.annot;
 
 import org.springframework.stereotype.Service;
 
-@Service("securityService")
+@Service("securityService") //@Component와 같음
 public class SecurityService {
     
     public boolean authenticate(String userId, String password) {

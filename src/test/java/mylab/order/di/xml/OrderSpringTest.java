@@ -24,6 +24,11 @@ public class OrderSpringTest {
 		assertNotNull(cart);
 		System.out.println("testShoppingCart Test");
 		assertEquals(2, cart.getProducts().size());
+		/*
+		 * cart.getProducts() =>List<Product>
+		 * cart.getProducts().get(0) => Product
+		 * cart.getProducts().get(0).getName() => String
+		 */
 		assertEquals(8000, cart.getTotalPrice());
 		assertEquals("Apple",cart.getProducts().get(0).getName());
 		System.out.println(cart.toString());
@@ -32,6 +37,7 @@ public class OrderSpringTest {
 	@Test
 	void testOrderService() {
 		assertNotNull(service);
+		//service.getShoppingCart() => ShoppingCart
 		System.out.println("testOrderService Test");
 		assertEquals(8000, service.calculateOrderTotal());
 		System.out.println(service.toString());
