@@ -14,7 +14,7 @@
 	<Loggers>
 		<Logger name="org.springframework" level="INFO" additivity="false" />
 			
-		<Logger name="myspring" level="INFO" />
+		<Logger name="myspring" level="DEBUG" />
 		<Logger name = "mylab" level = "DEBUG" />
 		
 		<Root level="DEBUG">

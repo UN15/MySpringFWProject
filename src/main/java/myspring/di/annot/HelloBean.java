@@ -21,7 +21,6 @@ public class HelloBean {
 	
 //	@Value("${names.list.of.strings}")
 	@Value("#{'${names.list.of.strings}'.split(',')}")
-
 	List<String> names;
 
 	public HelloBean() {

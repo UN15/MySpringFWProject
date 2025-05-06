@@ -11,6 +11,7 @@
     
 	<typeAliases>
 		<typeAlias alias="User" type="myspring.user.vo.UserVO" />
+		<typeAlias alias="Customer" type="mylab.customer.vo.CustomerVO" />
 	</typeAliases>
 
 </configuration>
